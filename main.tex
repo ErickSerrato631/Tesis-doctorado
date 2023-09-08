@@ -13,7 +13,7 @@
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
-\title{Propuesta de investigación}
+\title{Avance de tesis}
 \author{Erick Felipe Serrato Garcia}
 
 \begin{document}
@@ -33,12 +33,9 @@ El cuerpo humano puede defenderse de diferentes amenazas, desde las que ingresan
 
 Cuando el sistema inmune detecta una anomalía, envia a las células llamadas "natural killers" que es un tipo de glóbulo blanco que puede matar células tumorales, células infectadas por virus o cualquier cosa que consideren anomala, estas no siempre tienen exito en su misión, cuando eso sucede, el sistema inmune envía a los lifocitos T o células T las cuales identifican a las células infectadas y las eliminan mediante un proceso llamado aptosis y posteriormente otras células "limpiadoras" llamadas macrofagos terminan de limpiar los restos.
 
-\subsection{Efecto Allee en poblaciones de células}
+\subsection{Efecto Allee}
 
-
-Los modelos tradicionales para poblaciones de cáncer consideran que crece de manera exponencial, limitado por los nutrientes y el espacio disponible, sin embargo estudios clínicos recientes muestran que el crecimiento puede comportarse como una dinámica con efecto Allee dependiendo la densidad de población que se tenga\cite{Gerlee032022}.
-
-La interacción entre células defensoras y cancerigenas puede explicarse de manera general como una dinámica de poblaciones entre presas y predadores, en la naturaleza si una densidad de población es demasiado baja y continua bajando se tiene una tasa de crecimiento negativa, tenemos otro caso en el cual la tasa de crecimiento es baja pero positiva, esto puede ser modelado mediante el efecto Allee fuerte y débil respectivamente, esto podemos visualizarlo en la Figura \ref{fig:allees}.
+La interacción entre células del sistema inmune y cancerigenas puede explicarse de manera general como una dinámica de poblaciones entre presas y predadores, en la naturaleza si una densidad de población es demasiado baja y continua bajando se tiene una tasa de crecimiento negativa, tenemos otro caso en el cual la tasa de crecimiento es baja pero positiva, esto puede ser modelado mediante el efecto Allee fuerte y débil respectivamente, esto podemos visualizarlo en la Figura \ref{fig:allees}.
 
 
 \begin{figure}[ht]
@@ -62,7 +59,16 @@ El caso débil es cuando $A\leq 0$, si consideramos $A=0$ y se obtiene:
     \label{eqn:weak_allee}
 \end{equation}
 
-La finalidad del presente es tratar de modificar el tratamiento de dosis máxima tolerada por una terapia mediante la predicción y control de densidades poblacionales cancerigenas, ya que al utilizar constantemente las dosis máximas toleradas se daña de manera simultanea al cancer y al cuerpo humano.
+En el año 2020 Marcello Delitala y colaboradores publicarón un artículo que examina críticamente la aplicabilidad y las implicaciones del efecto Allee en el contexto de la biología del cáncer y su impacto potencial en la evolución del cáncer y las estrategias terapéuticas. Este artículo profundiza en la cuestión fundamental de si el efecto Allee, un concepto típicamente asociado con la dinámica ecológica y poblacional, tiene relevancia en el campo de la investigación del cáncer. Explica que este concepto, si bien se aplica tradicionalmente a contextos ecológicos, puede tener implicaciones inexploradas en la comprensión de la biología del cáncer, donde las poblaciones celulares se comportan de manera que se asemejan a la dinámica poblacional. Los autores detallan los métodos de investigación empleados en esta investigación, que abarcan experimentos in vitro e in vivo, modelos matemáticos y análisis de datos clínicos. Estos enfoques fueron diseñados para dilucidar si las poblaciones de células cancerosas exhiben comportamientos consistentes con el efecto Allee. El artículo presenta una recopilación sólida de resultados que demuestran que el efecto Allee es realmente relevante en el contexto de la biología del cáncer. Revela que las poblaciones de células cancerosas pueden exhibir una dinámica de crecimiento dependiente de la densidad, con tasas de crecimiento que se desaceleran con densidades celulares bajas. Estos hallazgos sugieren que los principios de los efectos ecológicos de Allee pueden aplicarse para comprender la evolución del cáncer.
+
+Consideremos profundizar en la dinámica de las poblaciones de células cancerosas en bajas densidades y contrastando el modelo de crecimiento exponencial considerando la presencia de un efecto Allee. El campo de la física, ofrece nuevos conocimientos sobre los patrones de crecimiento de las células cancerosas y sus posibles implicaciones para el tratamiento y control del cáncer.
+
+Kaitlyn y colaboradores\cite{Kaitlyn1782019} publicarón un trabajo relacionado con efecto Allee para una población de células a densidades bajas, detallan los métodos experimentales y computacionales utilizados en este estudio, incluidas técnicas de cultivo celular, recopilación de datos y modelado matemático. Destacan el enfoque riguroso adoptado para evaluar con precisión el crecimiento de las células cancerosas en condiciones controladas. El artículo presenta resultados convincentes que indican que las poblaciones de células cancerosas en bajas densidades no se ajustan al modelo de crecimiento exponencial esperado. En cambio, los datos muestran desviaciones que son propias de un efecto Allee, donde las tasas de crecimiento se desaceleran en densidades de población bajas debido a varios factores, como recursos limitados y menores interacciones cooperativas entre células. Se proponen posibles mecanismos detrás del efecto Allee observado en poblaciones de células cancerosas, como limitaciones de nutrientes, alteraciones de la señalización e interacciones entre células. La discusión también aborda la importancia potencial del efecto Allee para las estrategias de tratamiento del cáncer, lo que sugiere que los enfoques terapéuticos dirigidos a poblaciones de baja densidad pueden producir resultados prometedores.
+
+La señalización autocrina es un mecanismo que permite a las células controlar y regular sus propias funciones. Por ejemplo, una célula puede secretar una molécula de señalización autocrina para estimular su propio crecimiento, diferenciación o supervivencia en respuesta a condiciones ambientales cambiantes o a estímulos internos. En el año 2022 Gerlee y colaboradores 
+publicaron un artículo \cite{Gerlee032022} que  explora el papel de la señalización autocrina en la manifestación de los efectos Allee dentro de las poblaciones de células cancerosas. Este estudio, basado en el ámbito de la biología celular y la investigación del cáncer, revela un mecanismo novedoso que arroja luz sobre la dinámica de la progresión del cáncer, con posibles implicaciones para las estrategias terapéuticas y los resultados del tratamiento. Los autores describen exhaustivamente los métodos experimentales y computacionales empleados en su investigación, incluidas técnicas de cultivo celular, adquisición de datos y modelado matemático. Se presta especial atención al diseño meticuloso de experimentos para explicar el papel de la señalización autocrina en el crecimiento de las células cancerosas. Los datos indican que las células exhiben un mayor comportamiento cooperativo y tasas de crecimiento cuando la señalización autocrina está activa, lo que puede conducir a una proliferación acelerada en densidades celulares bajas.Además, el artículo analiza las posibles consecuencias de estos descubrimientos para las estrategias de tratamiento del cáncer. Sugiere que las intervenciones dirigidas a las vías de señalización autocrina pueden representar una vía prometedora para controlar la progresión del cáncer y mejorar los resultados terapéuticos.
+
+
 
 
 \subsection{Complejo MHC y su importancia en el cancer}
